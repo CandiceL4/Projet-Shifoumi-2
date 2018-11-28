@@ -58,17 +58,39 @@ namespace shifoumi
         private string ChoixAleatoire()
         {
             choixOrdinateur = ordi[random.Next(30) / 10];
+            if (choixOrdinateur == "fueille")
+            {
+               fueillered.Visibility = Visibility.Visible;
+                pierrered.Visibility = Visibility.Hidden;
+                ciseaured.Visibility = Visibility.Hidden;
+            }
+            else if (choixOrdinateur == "pierre")
+            {
+                fueillered.Visibility = Visibility.Hidden;
+                pierrered.Visibility = Visibility.Visible;
+                ciseaured.Visibility = Visibility.Hidden;
+            }
+            else if (choixOrdinateur == "ciseau")
+            {
+                fueillered.Visibility = Visibility.Hidden;
+                pierrered.Visibility = Visibility.Hidden;
+                ciseaured.Visibility = Visibility.Visible;
+            }
             return choixOrdinateur;
+              
         }
 
         private void Gagnant()
         {
-
+            flashrouge.Visibility = Visibility.Visible;
+            flashjaune.Visibility = Visibility.Hidden;
             if (choixJoueur == "pierre")
             {
                 if (choixOrdinateur == "pierre")
+                {
                     textBlock1.Text = "Egalité ";
-
+                    flashrouge.Visibility = Visibility.Hidden;
+                }
                 else if (choixOrdinateur == "fueille")
                 {
                     textBlock1.Text = "Perdu";
@@ -77,6 +99,8 @@ namespace shifoumi
                 else if (choixOrdinateur == "ciseau")
                 {
                     textBlock1.Text = "Gagner";
+                    flashjaune.Visibility = Visibility.Visible;
+                    flashrouge.Visibility = Visibility.Hidden;
                     score1++;
                 }
             }   
@@ -88,10 +112,15 @@ namespace shifoumi
                 if (choixOrdinateur == "pierre")
                 {
                     textBlock1.Text = "Gagner ";
+                    flashjaune.Visibility = Visibility.Visible;
+                    flashrouge.Visibility = Visibility.Hidden;
                     score1++;
                 }
                 else if (choixOrdinateur == "fueille")
+                {
                     textBlock1.Text = "Egalite";
+                    flashrouge.Visibility = Visibility.Hidden;
+                }
                 else if (choixOrdinateur == "ciseau")
                 {
                     textBlock1.Text = "Perdu";
@@ -104,20 +133,26 @@ namespace shifoumi
             {
                 if (choixOrdinateur == "pierre")
                 {
-                    textBlock1.Text = "Perdue ";
+                    textBlock1.Text = "Perdu ";
                     score++;
                 }
                 else if (choixOrdinateur == "fueille")
                 {
                     textBlock1.Text = "Gagner";
+                    flashjaune.Visibility = Visibility.Visible;
+                    flashrouge.Visibility = Visibility.Hidden;
                     score1++;
                 }
                 else if (choixOrdinateur == "ciseau")
+                {
                     textBlock1.Text = "Egalite";
+                    flashrouge.Visibility = Visibility.Hidden;
+                }
+              
             }
 
-            textBlock2.Text = ("joueur : " + score1);
-            textBlock3.Text = ("ordi :" + score);
+            textBlockJ.Text = score1.ToString();
+            textscoreO.Text = score.ToString();
         }
 
     }

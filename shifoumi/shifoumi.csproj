@@ -94,5 +94,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stone %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leaf %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="flash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="scissors %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leaf %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stone %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

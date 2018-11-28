@@ -13,7 +13,7 @@
             <ColumnDefinition Width="395*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="button" Content="Pierre
-                " HorizontalAlignment="Left" Margin="125,165,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Height="43" Grid.ColumnSpan="2" >
+                " HorizontalAlignment="Left" Margin="82,272,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Height="43" Grid.ColumnSpan="2" >
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -34,7 +34,7 @@
             </TextBlock.RenderTransform>
         </TextBlock>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="4" Margin="10,158,0,0" VerticalAlignment="Top" Width="4" Grid.Column="2"/>
-        <Button x:Name="button2" Content="Ciseau" HorizontalAlignment="Left" Margin="131,154,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.002,2.129" Height="47" Grid.Column="2" Click="Button2_Click">
+        <Button x:Name="button2" Content="Ciseau" HorizontalAlignment="Left" Margin="118,198,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.002,2.129" Height="61" Grid.Column="2" Click="Button2_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,7 +45,7 @@
             </Button.RenderTransform>
         </Button>
         <Button x:Name="button3" Content="Feuille
-                " HorizontalAlignment="Left" Margin="162.706,157,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5" Height="42" Grid.ColumnSpan="2" Click="Button3_Click" Grid.Column="1">
+                " HorizontalAlignment="Left" Margin="160,250,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5" Height="42" Grid.ColumnSpan="2" Click="Button3_Click" Grid.Column="1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,28 +55,108 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="l'ordinateur  a  choisi :" VerticalAlignment="Top" Width="186" Margin="30,77,0,0" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="16" Text= "vous avez " VerticalAlignment="Top" Height="45" RenderTransformOrigin="0.5,0.5" Margin="138,46,0,0" Width="203" Grid.Column="1" Grid.ColumnSpan="2">
+        <TextBlock x:Name="textBox" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="l'ordinateur  a  choisi :" VerticalAlignment="Top" Width="186" Margin="30,77,0,0" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Text= "vous avez " VerticalAlignment="Top" Height="46" RenderTransformOrigin="0.5,0.5" Margin="67,34,0,0" Width="195" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Calibri Light">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="2.581"/>
+                    <RotateTransform Angle="0.297"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock x:Name="textBlock2" Grid.Column="2" HorizontalAlignment="Left" Margin="135,47,0,0" TextWrapping="Wrap" Text="Ordi:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock3" Grid.Column="2" HorizontalAlignment="Left" Margin="137,70,0,0" TextWrapping="Wrap" Text="joueur:" VerticalAlignment="Top" RenderTransformOrigin="-0.336,-2.975" Height="16" Width="49">
-            <TextBlock.RenderTransform>
+        <Image x:Name="scissors_png" Margin="172,284,153,68" Source="scissors.png" Stretch="Fill" Grid.Column="2" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.544"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="stone__1__png" Margin="111,326,6,29" Source="stone (1).png" Stretch="Fill" RenderTransformOrigin="0.865,1.796">
+            <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="2.417"/>
+                    <RotateTransform Angle="16.232"/>
+                    <TranslateTransform X="-24.115" Y="3.225"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="leaf__1__png" Margin="196,303,348,41" Source="leaf (1).png" Stretch="Fill" Grid.ColumnSpan="2" Grid.Column="1" RenderTransformOrigin="0.738,1.428">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.686"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.279"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="flashrouge" Margin="34,94,32,175" Source="flash (1).png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Width="150" Height="150">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="7.442"/>
+                    <RotateTransform Angle="-46.245"/>
+                    <TranslateTransform X="-7.076" Y="-6.775"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="flashjaune" Margin="152,84,306,167" Source="flash.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="9.769"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="textBlock4" Grid.Column="2" HorizontalAlignment="Left" Margin="135,21,0,0" TextWrapping="Wrap" Text="score" VerticalAlignment="Top" Height="21" RenderTransformOrigin="-3.461,-3.189"/>
+            </Image.RenderTransform>
+        </Image>
+        <Grid Grid.Column="2" HorizontalAlignment="Left" Height="121" Margin="215,27,0,0" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.19"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="textBlock4" FontSize="20" Margin="25,2,6,65" TextWrapping="Wrap" Text="score" RenderTransformOrigin="-3.461,-3.189" Width="69" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.694"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="textBlock3" Grid.Column="1" HorizontalAlignment="Left" Margin="13,10,-12,0" TextWrapping="Wrap" Text="joueur:" VerticalAlignment="Top" RenderTransformOrigin="-0.336,-2.975" Height="16" Width="49" Grid.Row="1">
+
+            </TextBlock>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="Ordi:" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="37" Margin="10,34,0,0" Grid.Row="1" VerticalAlignment="Top" Width="50">
+                <TextBlock x:Name="textscoreO" TextWrapping="Wrap" Text=" 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="37" Margin="10,34,0,0" Grid.Row="1" VerticalAlignment="Top" Width="50" Grid.Column="1">
+                <TextBlock x:Name="textBlockJ" TextWrapping="Wrap" Text="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </Grid>
+        <Image x:Name="ciseaured" Margin="53,122,64,233" Source="scissors (1).png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="fueillered" Margin="53,122,64,233" Source="leaf (2).png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="pierrered" Margin="53,122,64,233" Source="stone (2).png" Stretch="Fill" Visibility="Hidden"/>
     </Grid>
 </Window>
